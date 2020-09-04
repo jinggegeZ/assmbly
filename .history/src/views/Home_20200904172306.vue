@@ -48,8 +48,7 @@
            align:"center"
          },
          {
-           lable:"操作",
-           align:"center"
+           lable:"操作"
          }
        ]
      }

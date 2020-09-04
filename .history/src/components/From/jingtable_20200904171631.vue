@@ -14,11 +14,12 @@
           v-else
           :key="index"
           :lable="item.lable"
+          :prop="item.prop"
           :align="item.align"
           :width="item.width"
         >
           <template slot-scope="scope">
-            <slot name="action" :scope="scope"></slot>
+            <slot name="action"></slot>
           </template>
         </el-table-cloumn>
       </template>

@@ -1,10 +1,6 @@
 <template>
  <div>
-  <jing-table :tableData="tableData" :cloumns="cloumns">
-    <template v-slot:action="scope">
-      <el-button type="danger" @click="delete(scope.scope)">删除</el-button>
-    </template>
-  </jing-table>
+  <jing-table :tableData="tableData" :cloumns="cloumns"></jing-table>
  </div>
 </template>
 
@@ -46,19 +42,12 @@
            lable:"状态",
            prop:"mg_state",
            align:"center"
-         },
-         {
-           lable:"操作",
-           align:"center"
          }
        ]
      }
    },
    methods: {
-     //删除
-     delete(scope){
-       console.log(scope.row);
-     }
+
    },
    mounted() {
 

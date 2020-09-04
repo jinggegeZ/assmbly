@@ -46,19 +46,12 @@
            lable:"状态",
            prop:"mg_state",
            align:"center"
-         },
-         {
-           lable:"操作",
-           align:"center"
          }
        ]
      }
    },
    methods: {
-     //删除
-     delete(scope){
-       console.log(scope.row);
-     }
+
    },
    mounted() {
 

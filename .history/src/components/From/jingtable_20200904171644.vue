@@ -18,7 +18,7 @@
           :width="item.width"
         >
           <template slot-scope="scope">
-            <slot name="action" :scope="scope"></slot>
+            <slot name="action"></slot>
           </template>
         </el-table-cloumn>
       </template>
