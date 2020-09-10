@@ -1,0 +1,79 @@
+<template>
+ <div>
+  <jing-table :tableData="tableData" :cloumns="cloumns">
+    <template v-slot:action="scope">
+      <el-button type="danger" @click="delete(scope.scope)">删除</el-button>
+      <el-button type="danger" @click="delete(scope.scope)">编辑</el-button>
+      <el-button type="danger" @click="delete(scope.scope)">分配角色</el-button>
+    </template>
+  </jing-table>
+ </div>
+</template>
+
+<script>
+ export default {
+   name: '',
+   props: {
+   },
+   components: {
+
+   },
+   data () {
+     return {
+       tableData:[],
+       //表格里的配置
+       cloumns:[
+         {
+           lable:"姓名",
+           prop:"username",
+           align:"center",
+           width:"800"
+         },
+         {
+           lable:"角色",
+           prop:"role-name",
+           align:"center"
+         },
+         {
+           lable:"电话",
+           prop:"mobile",
+           align:"center"
+         },
+         {
+           lable:"邮箱",
+           prop:"email",
+           align:"center"
+         },
+         {
+           lable:"状态",
+           prop:"mg_state",
+           align:"center"
+         },
+         {
+           lable:"操作",
+           align:"center"
+         }
+       ]
+     }
+   },
+   methods: {
+     //删除
+     delete(scope){
+       console.log(scope.row);
+     }
+   },
+   mounted() {
+
+   },
+   watch: {
+
+   },
+   computed: {
+
+   }
+ }
+</script>
+
+<style scoped lang='scss'>
+
+</style>
